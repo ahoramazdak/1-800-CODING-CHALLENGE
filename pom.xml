@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.bipinet.numberencoding</groupId>
-    <artifactId>number-encoding</artifactId>
+    <groupId>com.aconex.numberencoding</groupId>
+    <artifactId>1-800-CODING-CHALLENGE</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -51,5 +51,5 @@
             </plugin>
         </plugins>
     </build>
-
+    <name>1-800-CODING-CHALLENGE</name>
 </project>
