@@ -198,7 +198,7 @@ public final class PhoneNumberEncoder implements NumberEncoder {
      * @param partlyEncodedNumbers a {@link Collection} of encoded numbers as strings.
      * @return a {@link Collection} root and partly encoded numbers.
      */
-    final static Collection<String> buildEncodedNumberStrings(
+    public final static Collection<String> buildEncodedNumberStrings(
             final String root, final Collection<String> partlyEncodedNumbers){
         final Collection<String> encodedNumberStrings = new ArrayList<>();
         for (String partlyEncodedNumber : partlyEncodedNumbers) {

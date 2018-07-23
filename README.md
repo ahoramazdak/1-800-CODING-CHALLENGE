@@ -1,4 +1,4 @@
-#Phone Number Encoder
+#1-800-CODING-CHALLENGE
 
 
 ### Instructions
@@ -10,6 +10,7 @@ Example:
 
 *  Windows ```-d C:\temp\dictionary.txt -i C:\temp\input.txt```
 *  Linux ```-d /tmp/dictionary.txt -i /tmp/input.txt```
+
 
 Dictionary files for test obtained and generated from these sites:
 
@@ -26,7 +27,7 @@ we set some assumption about size and length
     MAX_PHONE_NUMBER_LENGTH = 50;
 
 
-From IDE execute *com.aconex.numberencoding.lists.EncodedPhoneNumberList.main()* passing the required arguments.
+From IDE execute *com.aconex.phoneword.lists.PhoneWordList.main()* passing the required arguments.
 
 Alternatively build with Maven ```mvn clean install``` and execute in the terminal 
 ```java -jar number-encoding-1.0-SNAPSHOT.jar -d path_to_dictionary -i path_to_phone_numbers_file``` 

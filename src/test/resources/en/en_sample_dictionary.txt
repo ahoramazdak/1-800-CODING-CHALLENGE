@@ -1,8 +1,8 @@
 Abba
-abbey's
+abbey
 ABBR
 Boot
-cake"s
+cake
 da
 Fee
 fern
@@ -11,7 +11,7 @@ fort
 Mix
 Mixer
 Name
-P.A.
+PA
 so
 Tor
 Tory

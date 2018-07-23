@@ -46,9 +46,9 @@ public abstract class AbstractNumberToWordMapping implements NumberToWordMapping
         Collection<String> wordsAsASCIILetters = new ArrayList<>();
         final Collection<String> words = getWords(number);
         if (words != null) {
-            for (String word : words) {
+            words.stream().forEach((word) -> {
                 wordsAsASCIILetters.add(getASCIILetters(word));
-            }
+            });
         }
         return wordsAsASCIILetters;
     }

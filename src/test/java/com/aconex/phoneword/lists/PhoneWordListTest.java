@@ -4,7 +4,6 @@ package com.aconex.phoneword.lists;
 import com.aconex.phoneword.lists.PhoneWordList;
 import com.aconex.phoneword.dictionaries.AbstractDictionary;
 import com.aconex.phoneword.encoders.NumberEncoder;
-import com.aconex.phoneword.helpers.TestHelpers;
 import com.aconex.phoneword.entities.number.EncodedNumber;
 import com.aconex.phoneword.mapping.PhoneWordMapping;
 import com.aconex.phoneword.parameters.EnglishParameters;
@@ -31,12 +30,18 @@ public class PhoneWordListTest {
 
     @Test
     public void testPhoneNumberListIsLoadedCorrectly(){
+
         String fullPathPhoneNumberFile = RESOURCES_DIRECTORY.getAbsolutePath() + File.separator +
                 "phone_number_list.txt";
         int expectedPhoneNumberListSize = 1000;
         final Collection<EncodedNumber> loadedPhoneNumberList = new ArrayList<>();
-        //Prove the file exists! This is important!
-        TestHelpers.testFileExists(fullPathPhoneNumberFile);
+        
+
+//Prove the file exists! This is important!
+        File file = new File(fullPathPhoneNumberFile);
+        //Prove that the file exists!
+        assertTrue(String.format("File %s must exist!", file.getAbsolutePath()), file.exists());
+
         //Create a dummy dictionary validator.
         AbstractDictionaryValidator dummyDictionaryValidator = new AbstractDictionaryValidator(){};
         //Create a dummy dictionary.
@@ -50,12 +55,9 @@ public class PhoneWordListTest {
                 EnglishParameters.MAX_PHONE_NUMBER_LENGTH);
         //Create a dummy encoder that adds numbers to the lists,
         // we just want to test that all numbers in a valid file are loaded correctly.
-        NumberEncoder dummyNumberEncoder = new NumberEncoder() {
-            @Override
-            public Collection<EncodedNumber> encode(String number) {
-                loadedPhoneNumberList.add(new EncodedNumber(number, "ENCODED"));
-                return null;
-            }
+        NumberEncoder dummyNumberEncoder = (String number) -> {
+            loadedPhoneNumberList.add(new EncodedNumber(number, "ENCODED"));
+            return null;
         };
         PhoneWordMapping phoneNumberToWordMapping= new PhoneWordMapping(
                 EnglishParameters.DIGIT_TO_LETTER_MAPPING);

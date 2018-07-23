@@ -23,8 +23,12 @@ public class ReadWriteTextFile {
     /**
      * File reference to the resources directory.
      */
-    private static final File EN_RESOURCES_DIRECTORY = new File(
-            "src" + File.separator + "test" + File.separator + "resources" + File.separator + "en");
+    private static final File RESOURCES_DIRECTORY = new File(
+            "src" + File.separator + "test" + File.separator + "resources");
+    private static final File EN_RESOURCES_DIRECTORY = new File(RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "en");
+
+    final static String phone_number_list = RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "phone_number_list.txt";
+    final static String phone_number_sample_list = RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "sample_phone_number_list.txt";
     final static String fr_words = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "words.txt";
     final static String fr_words_alpha = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "words_alpha.txt";
     final static String fr_words_au = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "wordlist_kevin_en_AU_20180416_123599w.txt";
@@ -42,9 +46,9 @@ public class ReadWriteTextFile {
     final static String fw_words_83113_invalid_dic_size = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "en_invalid_dictionary_size_83113.txt";
 
     public static void main(String[] args) throws IOException {
-        ReadWriteTextFile rwtf=new ReadWriteTextFile();
+        ReadWriteTextFile rwtf = new ReadWriteTextFile();
         ReadWriteTextFile.setLcme(0);
-        readFile(frw_words_au_len_more_2);
+//        readFile(frw_words_au_len_more_2);
 //        readWriteFile(fr_words_au,new FileWriter(frw_words_au_len_more_2));
 //        readWriteFile(fr_words_au,new FileWriter(frw_words_au));
         FileWriter fileWriter;
@@ -63,7 +67,7 @@ public class ReadWriteTextFile {
 //        fileWriter = new FileWriter(fw_words_83113_invalid_dic_size);
 //        makeTestFile(fr_words, words_lc, fileWriter, 83113);
 //        System.out.println("Generated " + fw_words_73113_invalid_word_length);
-        
+
     }
     static int[] nlines;
 
@@ -82,10 +86,11 @@ public class ReadWriteTextFile {
 
     private static int lcme;
 
-    static String formatMe(String str){
+    static String formatMe(String str) {
 
-        return String.format(" %d : %s",++lcme,str);
+        return String.format(" %d : %s", ++lcme, str);
     }
+
     public static void readFile(String filepath) throws IOException {
 
         try (Stream<String> lines = Files.lines(Paths.get(filepath))) {

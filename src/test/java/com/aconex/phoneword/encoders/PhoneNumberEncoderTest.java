@@ -23,7 +23,7 @@ public class PhoneNumberEncoderTest {
      * File reference to the resources directory.
      */
     private static final File RESOURCES_DIRECTORY = new File(
-            "src" + File.separator + "test" + File.separator + "resources");
+            "src" + File.separator + "test" + File.separator + "resources" +File.separator + "en");
 
     /**
      *  correct program output.
@@ -238,12 +238,7 @@ public class PhoneNumberEncoderTest {
         performTestEncodeNumbers("sample_dictionary.txt", SAMPLE_PHONE_NUMBER_LIST, EXPECTED_PROGRAM_OUTPUT);
     }
 
-    @Test
-    public void testEncodeNumbersSpecDigitEnc(){
-        performTestEncodeNumbers("sample_dictionary_spec_digit_enc.txt",
-                SAMPLE_PHONE_NUMBER_LIST_SPEC_DIGIT_ENC, EXPECTED_PROGRAM_OUTPUT_SPEC_DIGIT_ENC);
-    }
-
+    
     @Test
     public void testEncodeNumbersDigitsAndSingleLetters(){
         performTestEncodeNumbers("sample_dictionary_letters_only.txt",

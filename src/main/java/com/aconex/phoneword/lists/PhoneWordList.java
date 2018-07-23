@@ -152,11 +152,14 @@ public class PhoneWordList extends AbstractNumberList {
         Map<String, List<String>> params = CommandLineUtils.parseCommandLine(args);
         //must contain one argument and one option per argument.
         if (
-                (params != null) && (params.size() != 0) &&
-                (params.get(arguments.d.toString()) != null) &&
+                (params != null) && (!params.isEmpty()) &&
+                ((params.get(arguments.d.toString()) != null) &&
                 (params.get(arguments.i.toString()) != null) &&
                 (params.get(arguments.d.toString()).size() == 1) &&
-                (params.get(arguments.i.toString()).size() == 1)
+                (params.get(arguments.i.toString()).size() == 1))||
+                ((params.get(arguments.d.toString()) == null) &&
+                (params.get(arguments.i.toString()) != null) &&
+                (params.get(arguments.i.toString()).size() == 1))
                 ) {
             return params;
         }
@@ -182,7 +185,9 @@ public class PhoneWordList extends AbstractNumberList {
                 "  * Windows -%s C:\\temp\\dictionary.txt -%s C:\\temp\\input.txt", arguments.d, arguments.i));
         usageBuilder.append(lineSeparator);
         usageBuilder.append(String.format(
-                "  * Linux -%s /tmp/dictionary.txt -%s /tmp/input.txt", arguments.d, arguments.i));
+                "  * Linux -%s /tmp/dictionary.txt -%s /tmp/input.txt", arguments.d, arguments.i));usageBuilder.append(lineSeparator);usageBuilder.append(String.format(
+                "  * Or\t -%s /tmp/input.txt  Hint \"There should exist a dictionary file at current directory with name wordlist.txt \"", arguments.i));usageBuilder.append(lineSeparator);usageBuilder.append(String.format(
+                "  * Or\t number1 number2 ... nymberN  Hint \"There should exist a dictionary file at current directory with name wordlist.txt \""));
         System.out.println(usageBuilder.toString());
     }
 

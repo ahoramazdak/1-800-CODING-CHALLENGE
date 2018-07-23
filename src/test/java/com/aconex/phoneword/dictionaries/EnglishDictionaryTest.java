@@ -22,7 +22,7 @@ public class EnglishDictionaryTest {
      * File reference to the resources directory.
      */
     private static final File RESOURCES_DIRECTORY = new File(
-            "src" + File.separator + "test" + File.separator + "resources");
+            "src" + File.separator + "test" + File.separator + "resources"+File.separator + "en");
     /**
      * Dictionary validator to be used in all instances of {@link EnglishDictionary}
      */
@@ -64,7 +64,7 @@ public class EnglishDictionaryTest {
 
     @Test
     public void testEnglishDictionaryWithInvalidWordLengthCanNotBeLoaded(){
-        String fullPathToDictionaryFile = RESOURCES_DIRECTORY.getAbsolutePath() + File.separator +
+        String fullPathToDictionaryFile = RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + 
                 "dictionary_size_73113_with_invalid_word_length.txt";
         //Prove the file exists! This is important!
         TestHelpers.testFileExists(fullPathToDictionaryFile);
