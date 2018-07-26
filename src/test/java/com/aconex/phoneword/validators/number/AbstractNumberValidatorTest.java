@@ -1,7 +1,5 @@
 package com.aconex.phoneword.validators.number;
 
-import com.aconex.phoneword.validators.number.NumberValidator;
-import com.aconex.phoneword.validators.number.AbstractNumberValidator;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertFalse;

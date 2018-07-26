@@ -1,0 +1,64 @@
+112.1 : 11-A-1	
+5624-8.2 : 5-N-A-I-8-A	5-N-A-HUB	5-N-A-I-8-A	5-N-A-IVA	5-N-BIT-A	5-N-CHUB	5-N-CIT-A	5-N-A-HUB	JOB-HUB	LOB-HUB	5-N-2-HUB	5-N-A-I-8-A	JOB-I-8-A	LOB-I-8-A	5-N-2-I-8-A	5-N-A-IVA	JOB-IVA	LOB-IVA	5-N-2-IVA	JOB-I-8-A	JOB-HUB	JOB-I-8-A	JOB-IVA	KOCH-8-A	LOB-I-8-A	LOB-HUB	LOB-I-8-A	LOB-IVA	LOCI-8-A	5-MAG-82	5-MAI-82	5-MCI-82	5-N-2482	5-NAG-82	5-NAH-82	5-OAHU-2	5-OBI-82	5-OBIT-2	5-OCH-82	
+4824 : I-8-A-I	HUB-I	I-8-A-4	I-8-A-I	I-TAG	ITCH	IVA-I	I-TAG	
+0721/608-4067 : 0-S-A-1-N-08-I-0-N-7	0-S-A-1-N-08-I-0-OR	0-S-A-1-N-08-I-0-N-S	0-S-A-1-N-084067	0-S-A-1608-I-0-OR	0-S-A-1-N-0840-OR	0-S-A-1-N-08-I-0-N-S	0-S-A-1-N-08406-S	0-S-A-1-N-08-I-0-N-7	0-S-A-1-N-08-I-0-OR	0-S-A-1-N-08-I-0-N-S	0721-N-08-I-0-N-7	0721-N-08-I-0-OR	0721-N-08-I-0-N-S	0-S-21608-I-0-N-7	0-S-21608-I-0-OR	0-S-21608-I-0-N-S	07-A-1-N-08-I-067	07-A-1-N-08-I-0-N-S	07-A-1-N-08-I-0-OR	07-A-1-N-08-I-06-S	07-A-1-N-08-I-0-N-S	0-S-21-N-08-I-067	0-S-21-N-08-I-0-N-S	0-S-21-N-08-I-0-OR	0-S-21-N-08-I-06-S	0-S-21-N-08-I-0-N-S	0-S-A-1608-I-0-OR	0-S-A-1-N-0840-OR	0721608-I-0-OR	07-A-1-N-08-I-0-OR	0-S-21-N-08-I-0-OR	0-S-2160840-OR	0-S-216084067	
+10/783--5 : 10-PUD-5	10-QUE-5	10-RTE-5	10-RUE-5	10-S-835	10-STD-5	10-STE-5	10-SUE-5	10-S-TEL	
+1078-913-5 : 10-QTY-135	10-S-89135	10-STY-135	1078-X-135	1078-Y-135	1078-Z-135	
+381482 : 381-I-8-A	381-HUB	381-I-82	381-IVA	
+04824 : 0-I-8-A-I	0-HUB-4	0-I-824	0-ITCH	0-IVA-4	0-I-TAG	
+
+112.1 : 11-A-1	
+5624-8.2 : 5-N-A-I-8-A	5-N-A-HUB	5-N-A-I-8-A	5-N-A-IVA	5-N-BIT-A	5-N-CHUB	5-N-CIT-A	5-N-A-HUB	JOB-HUB	LOB-HUB	5-N-2-HUB	5-N-A-I-8-A	JOB-I-8-A	LOB-I-8-A	5-N-2-I-8-A	5-N-A-IVA	JOB-IVA	LOB-IVA	5-N-2-IVA	JOB-I-8-A	JOB-HUB	JOB-I-8-A	JOB-IVA	KOCH-8-A	LOB-I-8-A	LOB-HUB	LOB-I-8-A	LOB-IVA	LOCI-8-A	5-MAG-82	5-MAI-82	5-MCI-82	5-N-2482	5-NAG-82	5-NAH-82	5-OAHU-2	5-OBI-82	5-OBIT-2	5-OCH-82	
+4824 : I-8-A-I	HUB-I	I-8-A-4	I-8-A-I	I-TAG	ITCH	IVA-I	I-TAG	
+0721/608-4067 : 0-S-A-1-N-08-I-0-N-7	0-S-A-1-N-08-I-0-OR	0-S-A-1-N-08-I-0-N-S	0-S-A-1-N-084067	0-S-A-1608-I-0-OR	0-S-A-1-N-0840-OR	0-S-A-1-N-08-I-0-N-S	0-S-A-1-N-08406-S	0-S-A-1-N-08-I-0-N-7	0-S-A-1-N-08-I-0-OR	0-S-A-1-N-08-I-0-N-S	0721-N-08-I-0-N-7	0721-N-08-I-0-OR	0721-N-08-I-0-N-S	0-S-21608-I-0-N-7	0-S-21608-I-0-OR	0-S-21608-I-0-N-S	07-A-1-N-08-I-067	07-A-1-N-08-I-0-N-S	07-A-1-N-08-I-0-OR	07-A-1-N-08-I-06-S	07-A-1-N-08-I-0-N-S	0-S-21-N-08-I-067	0-S-21-N-08-I-0-N-S	0-S-21-N-08-I-0-OR	0-S-21-N-08-I-06-S	0-S-21-N-08-I-0-N-S	0-S-A-1608-I-0-OR	0-S-A-1-N-0840-OR	0721608-I-0-OR	07-A-1-N-08-I-0-OR	0-S-21-N-08-I-0-OR	0-S-2160840-OR	0-S-216084067	
+10/783--5 : 10-PUD-5	10-QUE-5	10-RTE-5	10-RUE-5	10-S-835	10-STD-5	10-STE-5	10-SUE-5	10-S-TEL	
+1078-913-5 : 10-QTY-135	10-S-89135	10-STY-135	1078-X-135	1078-Y-135	1078-Z-135	
+381482 : 381-I-8-A	381-HUB	381-I-82	381-IVA	
+04824 : 0-I-8-A-I	0-HUB-4	0-I-824	0-ITCH	0-IVA-4	0-I-TAG	
+
+5624-8.2: JOB-I-8-A
+5624-8.2: JOB-HUB
+5624-8.2: JOB-IVA
+5624-8.2: LOB-I-8-A
+5624-8.2: LOB-HUB
+5624-8.2: LOB-IVA
+5624-8.2: KOCH-8-A
+5624-8.2: LOCI-8-A
+4824: I-TAG
+4824: HUB-I
+4824: IVA-I
+4824: ITCH
+04824: 0-I-TAG
+04824: 0-HUB-I
+04824: 0-IVA-I
+04824: 0-ITCH
+
+113919
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.Arrays.copyOf(Arrays.java:3332)
+	at java.lang.String.concat(String.java:2032)
+	at com.aconex.tmputils.LetterCombination.combi(LetterCombination.java:177)
+	at com.aconex.tmputils.LetterCombination.lambda$phoneWord$3(LetterCombination.java:224)
+	at com.aconex.tmputils.LetterCombination$$Lambda$4/295530567.accept(Unknown Source)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at com.aconex.tmputils.LetterCombination.phoneWord(LetterCombination.java:217)
+	at com.aconex.tmputils.LetterCombination.combi(LetterCombination.java:175)
+	at com.aconex.tmputils.LetterCombination.lambda$phoneWord$3(LetterCombination.java:224)
+	at com.aconex.tmputils.LetterCombination$$Lambda$4/295530567.accept(Unknown Source)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at com.aconex.tmputils.LetterCombination.phoneWord(LetterCombination.java:217)
+	at com.aconex.tmputils.LetterCombination.combi(LetterCombination.java:187)
+	at com.aconex.tmputils.LetterCombination.lambda$phoneWord$3(LetterCombination.java:226)
+	at com.aconex.tmputils.LetterCombination$$Lambda$4/295530567.accept(Unknown Source)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at com.aconex.tmputils.LetterCombination.phoneWord(LetterCombination.java:217)
+	at com.aconex.tmputils.LetterCombination.combi(LetterCombination.java:186)
+	at com.aconex.tmputils.LetterCombination.lambda$phoneWord$3(LetterCombination.java:226)
+	at com.aconex.tmputils.LetterCombination$$Lambda$4/295530567.accept(Unknown Source)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at com.aconex.tmputils.LetterCombination.phoneWord(LetterCombination.java:217)
+	at com.aconex.tmputils.LetterCombination.main(LetterCombination.java:122)

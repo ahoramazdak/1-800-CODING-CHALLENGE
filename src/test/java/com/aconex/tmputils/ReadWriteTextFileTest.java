@@ -5,7 +5,7 @@
  */
 package com.aconex.tmputils;
 
-import com.aconex.tmputils.ReadWriteTextFile;
+import com.aconex.phonewords.utils.ReadWriteTextFile;
 import java.io.FileWriter;
 import org.junit.After;
 import org.junit.AfterClass;

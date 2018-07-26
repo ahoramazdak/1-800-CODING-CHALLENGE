@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.aconex.tmputils;
+package com.aconex.phonewords.utils;
 
 /**
  *
@@ -27,23 +27,24 @@ public class ReadWriteTextFile {
             "src" + File.separator + "test" + File.separator + "resources");
     private static final File EN_RESOURCES_DIRECTORY = new File(RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "en");
 
-    final static String phone_number_list = RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "phone_number_list.txt";
-    final static String phone_number_sample_list = RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "sample_phone_number_list.txt";
-    final static String fr_words = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "words.txt";
-    final static String fr_words_alpha = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "words_alpha.txt";
-    final static String fr_words_au = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "wordlist_kevin_en_AU_20180416_123599w.txt";
-    final static String frw_words_au = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "wordlist_en_au.txt";
-    final static String frw_words_au_len_more_2 = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "wordlist_en_au_len_more_2.txt";
+    public final static String phone_number_list = RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "phone_number_list.txt";
+    public final static String phone_number_sample_list = RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "sample_phone_number_list.txt";
+    public final static String fr_words = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "words.txt";
+    public final static String fr_english = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "english.txt";
+    public final static String fr_words_alpha = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "words_alpha.txt";
+    public final static String fr_words_au = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "wordlist_kevin_en_AU_20180416_123599w.txt";
+    public final static String frw_words_au = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "wordlist_en_au.txt";
+    public final static String frw_words_au_len_more_2 = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "wordlist_en_au_len_more_2.txt";
     final static int words_lc = 466544;
     final static int words_alpha_lc = 370098;
     final static int words_au_lc = 123599;
 
-    final static String fw_words_20 = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "en_valid_dictionary_size_20_words.txt";
-    final static String fw_words_alpha_20 = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "en_valid_dictionary_size_20_words_alpha.txt";
-    final static String fw_words_au_20 = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "en_valid_dictionary_size_20_words_au.txt";
-    final static String fw_words_73113 = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "en_valid_dictionary_size_73113.txt";
-    final static String fw_words_73113_invalid_word_length = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "en_dictionary_size_73113_with_invalid_word_length.txt";
-    final static String fw_words_83113_invalid_dic_size = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "en_invalid_dictionary_size_83113.txt";
+    public final static String fw_words_20 = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "en_valid_dictionary_size_20_words.txt";
+    public final static String fw_words_alpha_20 = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "en_valid_dictionary_size_20_words_alpha.txt";
+    public final static String fw_words_au_20 = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "en_valid_dictionary_size_20_words_au.txt";
+    public final static String fw_words_73113 = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "en_valid_dictionary_size_73113.txt";
+    public final static String fw_words_73113_invalid_word_length = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "en_dictionary_size_73113_with_invalid_word_length.txt";
+    public final static String fw_words_83113_invalid_dic_size = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "en_invalid_dictionary_size_83113.txt";
 
     public static void main(String[] args) throws IOException {
         ReadWriteTextFile rwtf = new ReadWriteTextFile();

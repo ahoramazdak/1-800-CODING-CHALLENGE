@@ -1,4 +1,4 @@
-package com.aconex.phoneword.utils;
+package com.aconex.phonewords.utils;
 
 
 import java.util.ArrayList;
