@@ -1,5 +1,8 @@
 package com.aconex.phonewords.entities;
 
+import com.aconex.phonewords.utils.ReadWriteTextFile;
+import java.util.Objects;
+
 /**
  * Wraps a {@link String} number.
  */
@@ -14,9 +17,22 @@ public class DigitNumber {
         return number;
     }
     public String getASCIIDigits() {
-        return number.replaceAll("[^0-9]+", "");
+        return number.replaceAll(ReadWriteTextFile.regex_not_digit, "");
     }
     public boolean containNumber(DigitNumber anotherNumber){
         return getASCIIDigits().contains(anotherNumber.getASCIIDigits());
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        return this.getASCIIDigits().equals(((DigitNumber)obj).getASCIIDigits());
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 67 * hash + Objects.hashCode(this.number);
+        return hash;
+    }
+    
 }

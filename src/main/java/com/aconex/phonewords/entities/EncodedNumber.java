@@ -1,40 +1,48 @@
 package com.aconex.phonewords.entities;
 
+import com.aconex.phonewords.utils.ReadWriteTextFile;
 
 /**
  * Represents an encoded number and provides specific method implementations.
  */
-public final class EncodedNumber{
-    /**
-     * Encoded representation of the {@link #number}.
-     */
-      private final String encodedNumber;
-    private String digitNumber;
-   private  String validEncodedNumber;
-   private String regExpValidator="[\\W_]";
+public final class EncodedNumber {
 
-    public EncodedNumber(String encodedNumber){
+    /**
+     * Encoded representation of the {@link #digitNumber}.
+     */
+    private final String encodedNumber;
+    private final String digitNumber;
+    private String validEncodedNumber;
+    private String regExpValidator = ReadWriteTextFile.regex_valid_phonewords;
+
+    public EncodedNumber(String encodedNumber) {
         this.encodedNumber = encodedNumber;
         validateEncodeNumber();
-        digitNumber=toNormalPhoneNumber();
+        digitNumber = toNormalPhoneNumber();
     }
-    public void validateEncodeNumber(){
-        validEncodedNumber=encodedNumber.replaceAll(regExpValidator, "").toUpperCase();
+
+    public void validateEncodeNumber() {
+        validEncodedNumber = encodedNumber.replaceAll(regExpValidator, "").toUpperCase();
     }
-    public void validateEncodeNumber(String regExpValidator){
-        this.regExpValidator=regExpValidator;
+
+    public void validateEncodeNumber(String regExpValidator) {
+        this.regExpValidator = regExpValidator;
         validateEncodeNumber();
     }
+
     public String getEncodedNumber() {
         return encodedNumber;
     }
-    public String getValidEncodedNumber(){
-        
+
+    public String getValidEncodedNumber() {
+
         return validEncodedNumber;
     }
-   public DigitNumber getDigitNumber(){
-       return new DigitNumber(digitNumber);
-   }
+
+    public DigitNumber getDigitNumber() {
+        return new DigitNumber(digitNumber);
+    }
+
     public String toNormalPhoneNumber() {
         String normal = "";
         for (char c : validEncodedNumber.toUpperCase().toCharArray()) {
@@ -43,7 +51,7 @@ public final class EncodedNumber{
         return normal;
     }
 
-    public char getKeypadNumber(char characterToConvert) {
+    private char getKeypadNumber(char characterToConvert) {
         if (Character.isDigit(characterToConvert)) {
             return characterToConvert;
         } else {

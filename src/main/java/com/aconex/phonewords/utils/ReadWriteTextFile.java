@@ -46,6 +46,11 @@ public class ReadWriteTextFile {
     public final static String fw_words_73113_invalid_word_length = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "en_dictionary_size_73113_with_invalid_word_length.txt";
     public final static String fw_words_83113_invalid_dic_size = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "en_invalid_dictionary_size_83113.txt";
 
+    
+    public final static String regexp_words_with_length_4_50="\\w{4,50}";
+    public final static String regex_valid_phonewords="[\\W_]";
+    public final static String regex_not_digit="[^0-9]+";
+    public final static String myDic=EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "amin_dic.txt";
     public static void main(String[] args) throws IOException {
         ReadWriteTextFile rwtf = new ReadWriteTextFile();
         ReadWriteTextFile.setLcme(0);
