@@ -6,7 +6,7 @@
 package com.aconex.phonewords;
 
 import com.aconex.phonewords.entities.Arguments;
-import com.aconex.phonewords.utils.ReadWriteTextFile;
+import com.aconex.phonewords.utils.Utility;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -66,7 +66,7 @@ public class PhoneWordsTest {
     @Test
     public void testPhoneNumberListIsLoadedCorrectly(){
 
-        String fullPathPhoneNumberFile = ReadWriteTextFile.phone_number_sample_list;
+        String fullPathPhoneNumberFile = Utility.phone_number_sample_list;
         int expectedPhoneNumberListSize = 9;
         final Collection<String> loadedPhoneNumberList = new HashSet<>(Arrays.asList("112.1",
 "5624-8.2",

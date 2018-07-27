@@ -7,6 +7,8 @@ package com.aconex.phonewords;
 
 import com.aconex.phonewords.entities.Arguments;
 import com.aconex.phonewords.utils.CommandLineUtils;
+import static com.aconex.phonewords.utils.Utility.Default_Dictionary_File;
+import static com.aconex.phonewords.utils.Utility.TimeOut;
 import java.io.File;
 import java.util.List;
 import java.util.Map;
@@ -18,7 +20,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class PhoneWords {
 
-    private static final String Default_Dictionary_File = "wordlist.txt";
+    
 
     /**
      * Get user input and validate. Valid user input -d value -i value.
@@ -31,13 +33,13 @@ public class PhoneWords {
         Map<Arguments, List<String>> params = CommandLineUtils.parseCommandLine(args);
         //must contain one argument and one option per argument.
         if ((params != null) && (!params.isEmpty())
-                && ((params.get(Arguments.d).size() == 1)
+                && (((params.get(Arguments.d).size() == 1)
                 && (params.get(Arguments.i).size() == 1)
                 && params.get(Arguments.num).isEmpty())
-                || ((params.get(Arguments.i).size() == 1)
+                || ((!params.get(Arguments.i).isEmpty())
                 && params.get(Arguments.num).isEmpty())
                 || ((params.get(Arguments.i).isEmpty())
-                && !params.get(Arguments.num).isEmpty())) {
+                && !params.get(Arguments.num).isEmpty()))) {
             return params;
         }
         return null;
@@ -123,7 +125,7 @@ public class PhoneWords {
             }
             phoneWordsCombination.findWordsInPhoneNumbers(pathToDictionaryFile);
 //            phoneWordsCombination.findWordsInPhoneNumbers(ReadWriteTextFile.fr_english);
-            phoneWordsCombination.phoneWordsGenerator(TimeUnit.MILLISECONDS.convert(100l, TimeUnit.MILLISECONDS));
+            phoneWordsCombination.phoneWordsGenerator(TimeUnit.MILLISECONDS.convert(TimeOut, TimeUnit.MILLISECONDS));
         } else {
             System.err.println("Error occurred when parsing input arguments.");
             printUsage();

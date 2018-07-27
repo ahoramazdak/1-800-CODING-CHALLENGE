@@ -1,6 +1,6 @@
 package com.aconex.phonewords.entities;
 
-import com.aconex.phonewords.utils.ReadWriteTextFile;
+import com.aconex.phonewords.utils.Utility;
 import java.util.Objects;
 
 /**
@@ -17,7 +17,7 @@ public class DigitNumber {
         return number;
     }
     public String getASCIIDigits() {
-        return number.replaceAll(ReadWriteTextFile.regex_not_digit, "");
+        return number.replaceAll(Utility.regex_not_digit, "");
     }
     public boolean containNumber(DigitNumber anotherNumber){
         return getASCIIDigits().contains(anotherNumber.getASCIIDigits());

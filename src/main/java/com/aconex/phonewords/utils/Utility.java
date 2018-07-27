@@ -18,8 +18,11 @@ import java.nio.file.Paths;
 import java.util.Random;
 import java.util.stream.Stream;
 
-public class ReadWriteTextFile {
+public class Utility {
 
+    
+    public static final String Default_Dictionary_File = "wordlist.txt";
+    public static final long TimeOut=100l;
     /**
      * File reference to the resources directory.
      */
@@ -46,14 +49,14 @@ public class ReadWriteTextFile {
     public final static String fw_words_73113_invalid_word_length = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "en_dictionary_size_73113_with_invalid_word_length.txt";
     public final static String fw_words_83113_invalid_dic_size = EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "en_invalid_dictionary_size_83113.txt";
 
-    
+    public final static String regexp_words_with_length_3_50_and_two_s="[AI]|(ME)|(AM)|(HE)|(OR)|\\w{3,50}";
     public final static String regexp_words_with_length_4_50="\\w{4,50}";
     public final static String regex_valid_phonewords="[\\W_]";
     public final static String regex_not_digit="[^0-9]+";
     public final static String myDic=EN_RESOURCES_DIRECTORY.getAbsolutePath() + File.separator + "amin_dic.txt";
     public static void main(String[] args) throws IOException {
-        ReadWriteTextFile rwtf = new ReadWriteTextFile();
-        ReadWriteTextFile.setLcme(0);
+        Utility rwtf = new Utility();
+        Utility.setLcme(0);
 //        readFile(frw_words_au_len_more_2);
 //        readWriteFile(fr_words_au,new FileWriter(frw_words_au_len_more_2));
 //        readWriteFile(fr_words_au,new FileWriter(frw_words_au));
@@ -102,7 +105,7 @@ public class ReadWriteTextFile {
         try (Stream<String> lines = Files.lines(Paths.get(filepath))) {
             lines.filter((line) -> {
                 return line.matches("[AINYXSZ^ainyxsz|ainyxsz^AINYXSZ](ME)|(AM)|(HE)|(OR)|\\w{3,50}");
-            }).map(String::toUpperCase).sorted().distinct().map(ReadWriteTextFile::formatMe).forEach(System.out::println);
+            }).map(String::toUpperCase).sorted().distinct().map(Utility::formatMe).forEach(System.out::println);
 
         }
 

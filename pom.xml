@@ -6,7 +6,7 @@
 
     <groupId>com.aconex.phonewords</groupId>
     <artifactId>1-800-CODING-CHALLENGE</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0-ACONEX</version>
 
     <properties>
         <project.java.source>1.8</project.java.source>

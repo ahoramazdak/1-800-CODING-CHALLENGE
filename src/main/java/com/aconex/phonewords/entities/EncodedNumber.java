@@ -1,6 +1,6 @@
 package com.aconex.phonewords.entities;
 
-import com.aconex.phonewords.utils.ReadWriteTextFile;
+import com.aconex.phonewords.utils.Utility;
 
 /**
  * Represents an encoded number and provides specific method implementations.
@@ -13,7 +13,7 @@ public final class EncodedNumber {
     private final String encodedNumber;
     private final String digitNumber;
     private String validEncodedNumber;
-    private String regExpValidator = ReadWriteTextFile.regex_valid_phonewords;
+    private String regExpValidator = Utility.regex_valid_phonewords;
 
     public EncodedNumber(String encodedNumber) {
         this.encodedNumber = encodedNumber;

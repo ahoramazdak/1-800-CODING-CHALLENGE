@@ -9,7 +9,7 @@ import com.aconex.phonewords.entities.PhoneWordsList;
 import com.aconex.phonewords.keypad.KeypadNumber;
 import com.aconex.phonewords.entities.DigitNumber;
 import com.aconex.phonewords.entities.EncodedNumber;
-import com.aconex.phonewords.utils.ReadWriteTextFile;
+import com.aconex.phonewords.utils.Utility;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -61,7 +61,7 @@ public class PhoneWordsCombination {
 //
 //        lc.readPhoneNumber();
 //
-//        lc.findWordsInPhoneNumbers(ReadWriteTextFile.fr_english);
+//        lc.findWordsInPhoneNumbers(Utility.fr_english);
 //
 //        lc.phoneWordsGenerator(TimeUnit.MILLISECONDS.convert(100l, TimeUnit.MILLISECONDS));
 //
@@ -88,7 +88,7 @@ public class PhoneWordsCombination {
 
     public LinkedHashMap<String, Collection<String>> findWordsInPhoneNumbers(String dicFilePath) {
         //        String regExpValidWords="[AI]|(ME)|(AM)|(HE)|(OR)|\\w{3,50}";
-        String regExpValidWords = ReadWriteTextFile.regexp_words_with_length_4_50;
+        String regExpValidWords = Utility.regexp_words_with_length_4_50;
 
         try (Stream<String> lines = Files.lines(Paths.get(dicFilePath))) {
 

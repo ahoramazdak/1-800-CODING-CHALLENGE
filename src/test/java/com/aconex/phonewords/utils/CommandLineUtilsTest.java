@@ -64,7 +64,7 @@ public class CommandLineUtilsTest {
     @Test
     public void testParseCommandLine2() {
         System.out.println("parseCommandLine2");
-        String[] args = {"-i",ReadWriteTextFile.phone_number_sample_list};
+        String[] args = {"-i",Utility.phone_number_sample_list};
         Map<Arguments, List<String>> expResult = new HashMap<>();
         expResult.put(Arguments.i, new ArrayList<>(Arrays.asList(args[1])));
         Map<Arguments, List<String>> result = CommandLineUtils.parseCommandLine(args);
@@ -77,7 +77,7 @@ public class CommandLineUtilsTest {
     @Test
     public void testParseCommandLine3() {
         System.out.println("parseCommandLine3");
-        String[] args = {"-i",ReadWriteTextFile.phone_number_sample_list,"-d",ReadWriteTextFile.myDic};
+        String[] args = {"-i",Utility.phone_number_sample_list,"-d",Utility.myDic};
         Map<Arguments, List<String>> expResult =  new HashMap<>();
         expResult.put(Arguments.i, new ArrayList<>(Arrays.asList(args[1])));
         expResult.put(Arguments.d, new ArrayList<>(Arrays.asList(args[3])));
@@ -91,7 +91,7 @@ public class CommandLineUtilsTest {
     @Test
     public void testParseCommandLine4() {
         System.out.println("parseCommandLine4");
-        String[] args = {"-d",ReadWriteTextFile.myDic,"345","345hh"};
+        String[] args = {"-d",Utility.myDic,"345","345hh"};
         Map<Arguments, List<String>> expResult =  new HashMap<>();
         expResult.put(Arguments.d, new ArrayList<>(Arrays.asList(args[1])));
         expResult.put(Arguments.num, new ArrayList<>(Arrays.asList(args[2],args[3])));

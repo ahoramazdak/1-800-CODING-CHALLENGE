@@ -15,20 +15,20 @@ Example:
 Dictionary files for test obtained and generated from these sites:
 
 https://www.wordgamedictionary.com/english-word-list/download/english.txt
+
 https://raw.githubusercontent.com/marcoagpinto/aoo-mozilla-en-dict/master/en_AU%20(Kevin%20Atkinson)/wordlist_kevin_en_AU_20180416_123599w.txt
 
 
-we set some assumption about size and length
+we set some assumption about size and timeout
+that set in Utilty.class
 
-    MAX_ENGLISH_DICTIONARY_SIZE = 90000;
-
-    MAX_ENGLISH_DICTIONARY_WORD_LENGTH = 50;
-
+    regexp_words_with_length_4_50 for finding words with length from 4 till 50 
+    TimeOut=100l timeout for recursive function to return for finding phonewords for each number
     MAX_PHONE_NUMBER_LENGTH = 50;
 
 
-From IDE execute *com.aconex.phoneword.lists.PhoneWordList.main()* passing the required arguments.
+From IDE execute *com.aconex.phonewords.PhoneWords.main()* passing the required arguments.
 
 Alternatively build with Maven ```mvn clean install``` and execute in the terminal 
-```java -jar number-encoding-1.0-SNAPSHOT.jar -d path_to_dictionary -i path_to_phone_numbers_file``` 
+```java -jar target/1-800-CODING-CHALLENGE-1.0-ACONEX.jar  -d path_to_dictionary -i path_to_phone_numbers_file``` 
 

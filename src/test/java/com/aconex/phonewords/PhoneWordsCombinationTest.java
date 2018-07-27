@@ -6,7 +6,7 @@
 package com.aconex.phonewords;
 
 import com.aconex.phonewords.entities.PhoneWordsList;
-import com.aconex.phonewords.utils.ReadWriteTextFile;
+import com.aconex.phonewords.utils.Utility;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -90,7 +90,7 @@ public class PhoneWordsCombinationTest {
         assertThat(phoneWordsGenerator.size(), is(0));
         instance.setWords(new HashSet<>(Arrays.asList("amin")));
         instance.readPhoneNumberFromInp(new ArrayList<>(Arrays.asList("2646")));
-        instance.findWordsInPhoneNumbers(ReadWriteTextFile.myDic);
+        instance.findWordsInPhoneNumbers(Utility.myDic);
         phoneWordsGenerator = instance.phoneWordsGenerator(lTimeOut);
         LinkedHashMap<String, Collection<String>> expectedRes = new LinkedHashMap<>();
         expectedRes.put("2646", new HashSet<>(Arrays.asList("AMIN")));
@@ -107,7 +107,7 @@ public class PhoneWordsCombinationTest {
     @Test
     public void testFindWordsInPhoneNumbers() {
         System.out.println("findWordsInPhoneNumbers");
-        String dicFilePath = ReadWriteTextFile.myDic;
+        String dicFilePath = Utility.myDic;
         PhoneWordsCombination instance = new PhoneWordsCombination();
         instance.readPhoneNumberFromInp(new ArrayList<>(Arrays.asList("2646")));
         LinkedHashMap<String, Collection<String>> findWordsInPhoneNumbers = instance.findWordsInPhoneNumbers(dicFilePath);
@@ -125,7 +125,7 @@ public class PhoneWordsCombinationTest {
     @Test
     public void testReadPhoneNumber() {
         System.out.println("readPhoneNumber");
-        String phoneNumberFilePath = ReadWriteTextFile.phone_number_sample_list;
+        String phoneNumberFilePath = Utility.phone_number_sample_list;
         PhoneWordsCombination instance = new PhoneWordsCombination();
         Set<String> readPhoneNumber = instance.readPhoneNumber(phoneNumberFilePath);
         assertTrue(readPhoneNumber.containsAll(new ArrayList<>(Arrays.asList("112.1", "5624-8.2", "4824", "0721/608-4067"))));
